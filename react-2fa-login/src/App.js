@@ -7,7 +7,7 @@ function App() {
     const [step, setStep] = useState(1);
 
     return (
-        <div className='s'>
+        <div>
             {step === 1 && <Login setStep={setStep} />}
             {step === 2 && <TwoFactor setStep={setStep} />}
             {step === 3 && <Protected />}
